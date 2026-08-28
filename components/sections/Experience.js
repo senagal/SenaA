@@ -2,12 +2,33 @@ import FadeInSection from "../FadeInSection";
 
 const EXPERIENCE = [
   {
+    role: "AI Engineer",
+    company: "Vivid Insights | Addis Ababa, Ethiopia",
+    date: "Apr 2026 - Present",
+    bullets: [
+      "Designed and built a full-stack AI powered cardiovascular health chatbot web application for African non-medical users using React, TypeScript, Tailwind CSS, Python, and FastAPI",
+      "Transformed a cardiovascular risk calculation model trained on approximately 70,000 patient records into a deployed, user facing chatbot platform",
+      "Integrated Azure OpenAI and Google Gemini APIs to generate plain English cardiovascular risk explanations and health summaries",
+    ],
+  },
+  {
     role: "Junior Parts Planning & Monitoring Officer",
     company: "KAKI Motors | Addis Ababa, Ethiopia",
     date: "Sep 2025 - Present",
     bullets: [
-      "Analyzing and forecasting sales and inventory data to optimize order and stocking decisions.",
-      "Automating and preparing Parts and Service department business flows for ERP integration.",
+      "Analyzed sales and inventory data to support forecasting and optimize stock planning",
+      "Built and monitored interactive dashboards (Excel, Power BI) that track stock levels, sales trends, and order fulfillment",
+      "Developed a Parts & Service CRM system to track requests, branch performance, and service coordination",
+      "Designed a summary dashboard to monitor branch performance, and contribution to overall business outcomes",
+      {
+        text: "Developed and automated internal tools, including:",
+        subBullets: [
+          "Weekly Review system for KPI tracking of all branches",
+          "Parts picker & consolidator tool to streamline order preparation",
+        ],
+      },
+      "Designed inventory checkup and tools audit systems to improve data accuracy and accountability",
+      "Performed data cleaning, validation, and structuring to ensure reliable reporting, and automated reporting workflows and supported ERP system integration",
     ],
   },
   {
@@ -45,6 +66,22 @@ const EXPERIENCE = [
   },
 ];
 
+function Bullet({ bullet }) {
+  if (typeof bullet === "string") {
+    return <li>{bullet}</li>;
+  }
+  return (
+    <li>
+      {bullet.text}
+      <ul>
+        {bullet.subBullets.map((sub) => (
+          <li key={sub}>{sub}</li>
+        ))}
+      </ul>
+    </li>
+  );
+}
+
 export default function Experience() {
   return (
     <FadeInSection id="experience" className="experience section">
@@ -61,7 +98,7 @@ export default function Experience() {
             <p className="date">{job.date}</p>
             <ul>
               {job.bullets.map((bullet) => (
-                <li key={bullet}>{bullet}</li>
+                <Bullet bullet={bullet} key={typeof bullet === "string" ? bullet : bullet.text} />
               ))}
             </ul>
           </div>

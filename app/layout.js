@@ -19,13 +19,11 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
           rel="stylesheet"
         />
       </head>
       <body>
-        <div className="blob shape-1"></div>
-        <div className="blob shape-2"></div>
         <Nav />
         <main>{children}</main>
         <ScrollToTopButton />

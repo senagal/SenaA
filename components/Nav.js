@@ -50,7 +50,7 @@ export default function Nav() {
               href="/SenaAbdisaCV.pdf"
               download
               className="btn primary-btn"
-              style={{ padding: "0.4rem 1.2rem", fontSize: "0.85rem", color: "#fff" }}
+              style={{ padding: "0.4rem 1.2rem", fontSize: "0.85rem" }}
               onClick={() => setOpen(false)}
             >
               Download CV
