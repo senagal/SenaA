@@ -85,13 +85,18 @@ function Bullet({ bullet }) {
 export default function Experience() {
   return (
     <FadeInSection id="experience" className="experience section">
-      <h2 className="section-title">
-        Experience <span className="accent-dot">.</span>
-      </h2>
-      <div className="timeline-container">
-        {EXPERIENCE.map((job) => (
-          <div className="experience-card glass-card" key={job.role + job.date}>
-            <div className="exp-header">
+      <div className="section-heading">
+        <h2 className="section-title">Experience</h2>
+        <p>
+          A path from product design and web development to operational analytics and applied AI.
+        </p>
+      </div>
+
+      <div className="experience-list">
+        {EXPERIENCE.map((job, index) => (
+          <article className={`experience-row${index < 2 ? " experience-current" : ""}`} key={job.role + job.date}>
+            <div className="experience-summary">
+              {index < 2 ? <p className="experience-state">Current role</p> : null}
               <h3>{job.role}</h3>
               <p className="company">{job.company}</p>
             </div>
@@ -101,7 +106,7 @@ export default function Experience() {
                 <Bullet bullet={bullet} key={typeof bullet === "string" ? bullet : bullet.text} />
               ))}
             </ul>
-          </div>
+          </article>
         ))}
       </div>
     </FadeInSection>

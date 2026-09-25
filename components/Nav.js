@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 
 const NAV_LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Projects" },
-  { href: "#certificates", label: "Certificates" },
+  { href: "#projects", label: "Selected work" },
   { href: "#experience", label: "Experience" },
+  { href: "#about", label: "Profile" },
+  { href: "#certificates", label: "Credentials" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -17,7 +17,7 @@ export default function Nav() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     onScroll();
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -49,8 +49,7 @@ export default function Nav() {
             <a
               href="/SenaAbdisaCV.pdf"
               download
-              className="btn primary-btn"
-              style={{ padding: "0.4rem 1.2rem", fontSize: "0.85rem" }}
+              className="nav-cta"
               onClick={() => setOpen(false)}
             >
               Download CV

@@ -5,7 +5,7 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 export const metadata = {
   title: "Sena Abdisa Gurmessa | Portfolio",
   description:
-    "Sena Abdisa Gurmessa — Computer Science Graduate, currently interested in Data Science.",
+    "Sena Abdisa Gurmessa — AI engineer and computer science graduate building practical, data-informed tools.",
 };
 
 export default function RootLayout({ children }) {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
       </head>

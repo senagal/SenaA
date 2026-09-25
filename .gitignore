@@ -39,3 +39,7 @@ SenaAbdisaResume.docx
 
 # Old static site, superseded by the Next.js app - not needed for deployment
 /legacy-static/
+
+# Reference clone of the "new_design" branch used to build the redesign - it's
+# a separate git repo (its own .git), not part of this one
+/new_design/
