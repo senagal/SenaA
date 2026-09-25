@@ -9,7 +9,7 @@ export default function Hero() {
           AI engineer and computer science graduate building practical, data-informed tools.
         </p>
         <p className="hero-summary hero-reveal delay-2">
-          My work moves between applied AI, analytics, and software—from cardiovascular risk
+          My work moves between applied AI, analytics, and software: from cardiovascular risk
           communication to football analysis and operational dashboards.
         </p>
         <div className="cta-container hero-reveal delay-3">

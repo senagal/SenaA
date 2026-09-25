@@ -32,7 +32,7 @@ export default function About() {
           <div>
             <h3>BSc, Computer Science</h3>
             <p>Addis Ababa University · Summa Cum Laude</p>
-            <p className="date">May 2022 — June 2025</p>
+            <p className="date">May 2022 to June 2025</p>
           </div>
         </div>
 

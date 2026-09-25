@@ -5,7 +5,7 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 export const metadata = {
   title: "Sena Abdisa Gurmessa | Portfolio",
   description:
-    "Sena Abdisa Gurmessa — AI engineer and computer science graduate building practical, data-informed tools.",
+    "Sena Abdisa Gurmessa: AI engineer and computer science graduate building practical, data-informed tools.",
 };
 
 export default function RootLayout({ children }) {
