@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-21T16:09:00Z",
+  "title": "Design System: Sena Abdisa Gurmessa Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f3efe6",
+        "tonalRamp": ["#2b2923", "#4d493f", "#6f695b", "#918a78", "#b2aa97", "#d0c9b9", "#e6e0d3", "#f7f4ed"]
+      },
+      "paper-deep": {
+        "role": "neutral",
+        "displayName": "Deep Paper",
+        "canonical": "#e9e2d5",
+        "tonalRamp": ["#292722", "#49453d", "#696359", "#898277", "#aaa197", "#c9c0b6", "#ded7ce", "#f4f0ea"]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Porcelain Surface",
+        "canonical": "#fbfaf6",
+        "tonalRamp": ["#2b2a28", "#4d4c48", "#6f6e68", "#92908a", "#b5b3ac", "#d5d3cc", "#e9e7e1", "#fbfaf6"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Near-Black Ink",
+        "canonical": "#182019",
+        "tonalRamp": ["#101510", "#182019", "#2f3930", "#4e594f", "#707c71", "#96a097", "#bec5bf", "#edf0ed"]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#5d635d",
+        "tonalRamp": ["#202320", "#363a36", "#4d524d", "#666c66", "#818781", "#9da39d", "#bec2be", "#edf0ed"]
+      },
+      "oxblood": {
+        "role": "primary",
+        "displayName": "Oxblood Red",
+        "canonical": "#8d2e25",
+        "tonalRamp": ["#2b0b08", "#4a1510", "#692019", "#8d2e25", "#a94e43", "#c87970", "#e2aaa4", "#f6e6e3"]
+      },
+      "oxblood-deep": {
+        "role": "primary",
+        "displayName": "Oxblood Deep",
+        "canonical": "#672119",
+        "tonalRamp": ["#250906", "#3f110c", "#541912", "#672119", "#8b4036", "#b16c63", "#d49d97", "#f2dfdc"]
+      },
+      "forest": {
+        "role": "secondary",
+        "displayName": "Forest Green",
+        "canonical": "#315b47",
+        "tonalRamp": ["#0b2016", "#153323", "#214934", "#315b47", "#527b66", "#779c87", "#a9c4b4", "#e4eee8"]
+      },
+      "forest-deep": {
+        "role": "secondary",
+        "displayName": "Forest Deep",
+        "canonical": "#173b2c",
+        "tonalRamp": ["#081b12", "#0e2a1d", "#173b2c", "#2d5743", "#4c765f", "#739985", "#a5beaf", "#e1ece5"]
+      },
+      "contact-muted": {
+        "role": "neutral",
+        "displayName": "Contact Muted",
+        "canonical": "#c9cec9",
+        "tonalRamp": ["#202420", "#3a3f3a", "#555b55", "#717871", "#8f968f", "#acb2ac", "#c9cec9", "#eff2ef"]
+      },
+      "contact-hover": {
+        "role": "primary",
+        "displayName": "Contact Hover",
+        "canonical": "#d9a49b",
+        "tonalRamp": ["#2b1713", "#4a2923", "#6a3d35", "#8b554b", "#ad7166", "#ca8f85", "#e2b7af", "#f7ebe8"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Full-name hero statement and singular identity moments." },
+      "headline": { "displayName": "Headline", "purpose": "Major section and contact headings." },
+      "title": { "displayName": "Title", "purpose": "Projects, roles, credentials, and records." },
+      "role": { "displayName": "Role", "purpose": "The prominent hero positioning statement." },
+      "featured-title": { "displayName": "Featured Title", "purpose": "Flagship project titles." },
+      "subsection": { "displayName": "Subsection", "purpose": "Major internal section labels such as in-progress work." },
+      "minor-title": { "displayName": "Minor Title", "purpose": "Compact record titles." },
+      "experience-title": { "displayName": "Experience Title", "purpose": "Professional role titles across responsive widths." },
+      "credential-title": { "displayName": "Credential Title", "purpose": "Certificate and recognition titles." },
+      "statistic": { "displayName": "Statistic", "purpose": "Rare oversized academic proof points." },
+      "panel-title": { "displayName": "Panel Title", "purpose": "Academic and skills panel headings." },
+      "body": { "displayName": "Body", "purpose": "Descriptions and professional evidence." },
+      "body-large": { "displayName": "Body Large", "purpose": "Emphasized summary copy." },
+      "body-small": { "displayName": "Body Small", "purpose": "Compact credential explanations." },
+      "action": { "displayName": "Action", "purpose": "Buttons and text links." },
+      "label": { "displayName": "Label", "purpose": "Navigation, metadata, dates, and statuses." },
+      "micro": { "displayName": "Micro", "purpose": "Technology and context metadata." },
+      "display-mobile": { "displayName": "Display Mobile", "purpose": "Responsive hero display scale." },
+      "role-mobile": { "displayName": "Role Mobile", "purpose": "Responsive hero role scale." },
+      "statistic-mobile": { "displayName": "Statistic Mobile", "purpose": "Responsive academic score scale." },
+      "contact-headline": { "displayName": "Contact Headline", "purpose": "Closing invitation on desktop and tablet." },
+      "contact-headline-mobile": { "displayName": "Contact Headline Mobile", "purpose": "Responsive closing invitation scale." }
+    },
+    "shadows": [
+      {
+        "name": "scrolled-navigation",
+        "value": "0 12px 30px rgba(24, 32, 25, 0.08)",
+        "purpose": "State-dependent separation beneath the fixed navigation after scrolling."
+      }
+    ],
+    "motion": [
+      { "name": "state-transition", "value": "180ms ease", "purpose": "Hover and focus color, border, gap, and position changes." },
+      { "name": "menu-transition", "value": "200ms ease", "purpose": "Hamburger line rotation and opacity." },
+      { "name": "hero-reveal", "value": "760ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Initial hero cascade from a softened 18px offset." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "980px" },
+      { "name": "mobile", "value": "760px" },
+      { "name": "small-mobile", "value": "520px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The decisive oxblood action used for primary portfolio paths.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Explore selected work</a>",
+      "css": ".ds-btn-primary { display:inline-flex; min-height:48px; align-items:center; justify-content:center; border:1px solid transparent; padding:.75rem 1.25rem; background:var(--red, #8d2e25); color:var(--surface, #fbfaf6); font-family:var(--font-body, Inter, sans-serif); font-size:.78rem; font-weight:750; letter-spacing:.08em; text-decoration:none; text-transform:uppercase; transition:background 180ms ease; } .ds-btn-primary:hover { background:var(--red-dark, #672119); } .ds-btn-primary:focus-visible { outline:3px solid var(--red, #8d2e25); outline-offset:4px; }"
+    },
+    {
+      "name": "Editorial Text Link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "A ruled secondary action that increases its directional gap on hover.",
+      "html": "<a class=\"ds-text-link\" href=\"#\">View project <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-text-link { display:inline-flex; align-items:center; gap:.4rem; width:fit-content; border-bottom:1px solid currentColor; color:var(--ink, #182019); font-family:var(--font-body, Inter, sans-serif); font-size:.78rem; font-weight:750; letter-spacing:.07em; padding:.28rem 0; text-decoration:none; text-transform:uppercase; transition:color 180ms ease, gap 180ms ease; } .ds-text-link:hover { color:var(--red, #8d2e25); gap:.7rem; } .ds-text-link:focus-visible { outline:3px solid var(--red, #8d2e25); outline-offset:4px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-cta",
+      "description": "Warm-paper navigation pairing the SG. monogram with compact uppercase destinations.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-logo\" href=\"#\">SG.</a><div class=\"ds-nav-links\"><a href=\"#\">Selected work</a><a href=\"#\">Experience</a><a class=\"ds-nav-cta\" href=\"#\">Request CV</a></div></nav>",
+      "css": ".ds-nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:2rem; padding:0 1.5rem; background:var(--paper, #f3efe6); border-bottom:1px solid var(--rule-strong, rgba(24,32,25,.45)); } .ds-logo { color:var(--ink, #182019); font-family:var(--font-heading, 'EB Garamond', Georgia, serif); font-size:1.7rem; font-weight:700; letter-spacing:-.03em; line-height:1; text-decoration:none; } .ds-nav-links { display:flex; align-items:center; gap:1.5rem; } .ds-nav-links a { color:var(--ink, #182019); font-family:var(--font-body, Inter, sans-serif); font-size:.72rem; font-weight:700; letter-spacing:.11em; text-decoration:none; text-transform:uppercase; } .ds-nav-links a:hover { color:var(--red, #8d2e25); } .ds-nav-cta { border:1px solid var(--ink, #182019); padding:.62rem 1rem; } .ds-nav-cta:hover { background:var(--ink, #182019); color:var(--surface, #fbfaf6) !important; }"
+    },
+    {
+      "name": "Project Evidence Row",
+      "kind": "card",
+      "description": "A ruled three-column record that makes title, explanation, and technical proof comparable.",
+      "html": "<article class=\"ds-project-row\"><div><p class=\"ds-context\">Football analytics · Defensive transitions</p><h3>Defensive Transition Analyser</h3></div><p class=\"ds-description\">A practical analysis platform built around decisions people need to make.</p><div class=\"ds-tech\">Python · Streamlit</div></article>",
+      "css": ".ds-project-row { display:grid; grid-template-columns:minmax(10rem,.8fr) minmax(14rem,1.25fr) minmax(9rem,.7fr); gap:2rem; align-items:start; padding:2rem 0; border-top:1px solid var(--rule-strong, rgba(24,32,25,.45)); color:var(--ink, #182019); } .ds-project-row h3 { max-width:16ch; margin:0; font-family:var(--font-heading, 'EB Garamond', Georgia, serif); font-size:2rem; font-weight:500; line-height:1.05; } .ds-context { margin:0 0 .55rem; color:var(--red, #8d2e25); font:800 .68rem/1.2 var(--font-body, Inter, sans-serif); letter-spacing:.1em; text-transform:uppercase; } .ds-description { margin:0; color:var(--muted, #5d635d); font:400 1rem/1.65 var(--font-body, Inter, sans-serif); } .ds-tech { color:var(--muted, #5d635d); font:750 .68rem/1.4 var(--font-body, Inter, sans-serif); letter-spacing:.07em; text-transform:uppercase; }"
+    },
+    {
+      "name": "Academic Record Panel",
+      "kind": "card",
+      "description": "A porcelain evidence panel with an oversized oxblood score and restrained academic metadata.",
+      "html": "<article class=\"ds-academic\"><p class=\"ds-score\">3.94<span>/4.0</span></p><div><h3>BSc, Computer Science</h3><p>Addis Ababa University · Summa Cum Laude</p><small>May 2022 — June 2025</small></div></article>",
+      "css": ".ds-academic { min-height:360px; display:flex; flex-direction:column; justify-content:space-between; gap:4rem; padding:3rem; background:var(--surface, #fbfaf6); border:1px solid var(--rule-strong, rgba(24,32,25,.45)); color:var(--ink, #182019); } .ds-score { margin:0; color:var(--red, #8d2e25); font-family:var(--font-heading, 'EB Garamond', Georgia, serif); font-size:6rem; font-variant-numeric:tabular-nums; letter-spacing:-.04em; line-height:.8; } .ds-score span { color:var(--muted, #5d635d); font-size:.28em; letter-spacing:0; } .ds-academic h3 { margin:0; font:500 2rem/1.05 var(--font-heading, 'EB Garamond', Georgia, serif); } .ds-academic div p { margin:.5rem 0 0; color:var(--muted, #5d635d); font:400 1rem/1.65 var(--font-body, Inter, sans-serif); } .ds-academic small { display:block; margin-top:.75rem; color:var(--red, #8d2e25); font:800 .72rem/1.2 var(--font-body, Inter, sans-serif); letter-spacing:.06em; text-transform:uppercase; }"
+    },
+    {
+      "name": "Contact Panel",
+      "kind": "custom",
+      "description": "The ink-ground closing panel that concentrates the portfolio into one decisive invitation.",
+      "html": "<section class=\"ds-contact\"><div><h2>Looking for an AI and data-minded builder?</h2><p>Practical engineering, careful analysis, and clear communication.</p><a href=\"#\">Email Sena</a></div><div class=\"ds-contact-rule\"><strong>LinkedIn</strong><span>Professional profile</span></div></section>",
+      "css": ".ds-contact { display:grid; grid-template-columns:1.2fr .8fr; gap:4rem; padding:4rem; background:var(--ink, #182019); color:var(--surface, #fbfaf6); } .ds-contact h2 { max-width:10ch; margin:0; font:500 4rem/.98 var(--font-heading, 'EB Garamond', Georgia, serif); letter-spacing:-.035em; } .ds-contact p { max-width:48ch; margin:1.5rem 0 2rem; color:#c9cec9; font:400 1rem/1.65 var(--font-body, Inter, sans-serif); } .ds-contact a { display:inline-flex; min-height:48px; align-items:center; padding:.75rem 1.25rem; background:var(--surface, #fbfaf6); color:var(--ink, #182019); font:750 .78rem/1.2 var(--font-body, Inter, sans-serif); letter-spacing:.08em; text-decoration:none; text-transform:uppercase; } .ds-contact a:hover { background:var(--red, #8d2e25); color:var(--surface, #fbfaf6); } .ds-contact-rule { align-self:end; display:flex; flex-direction:column; gap:.25rem; padding:1.25rem 0; border-top:1px solid rgba(251,250,246,.28); border-bottom:1px solid rgba(251,250,246,.28); color:#c9cec9; font:400 .78rem/1.4 var(--font-body, Inter, sans-serif); } .ds-contact-rule strong { color:var(--surface, #fbfaf6); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Analytical Editorial",
+    "overview": "This system presents professional evidence with the authority of a carefully edited journal: typographic hierarchy is expressive, facts remain easy to scan, and structure comes from rules and proportion rather than decorative containers. Its mood is confident, credible, and human. Warm paper surfaces keep the experience approachable while dark ink, oxblood, and forest accents lend academic weight.\n\nThe interface is spacious without feeling empty. Large EB Garamond headlines establish character; compact Inter labels organize supporting information with analytical precision. The system avoids generic technology gradients, glassmorphism, and dashboard conventions because they would weaken the portfolio's evidence-led editorial voice.",
+    "keyCharacteristics": [
+      "Warm paper grounds paired with near-black ink.",
+      "Editorial serif hierarchy balanced by concise sans-serif metadata.",
+      "Flat, square-edged compositions structured by visible rules.",
+      "Oxblood for decisive action and forest for considered emphasis.",
+      "Generous section rhythm with information-dense rows inside each section."
+    ],
+    "rules": [
+      { "name": "The Rare Oxblood Rule", "body": "Oxblood marks decisions and evidence; it never becomes a broad decorative wash.", "section": "colors" },
+      { "name": "The Paper, Not Glass Rule", "body": "Surfaces are opaque and tactile. Do not use transparency blur, luminous gradients, or glass effects.", "section": "colors" },
+      { "name": "The Two-Voice Rule", "body": "Serif communicates identity and subject; sans-serif communicates evidence, navigation, and action.", "section": "typography" },
+      { "name": "The Tight Headline Rule", "body": "Large serif headings use close leading and negative tracking; body copy never inherits that compression.", "section": "typography" },
+      { "name": "The Outer-Air, Inner-Evidence Rule", "body": "Sections breathe generously; records inside them remain compact enough to compare by scanning.", "section": "layout" },
+      { "name": "The State Earns Shadow Rule", "body": "Resting surfaces stay flat; shadow is reserved for a meaningful change in position or interaction state.", "section": "elevation" },
+      { "name": "The Square Default Rule", "body": "Use straight edges for content and action surfaces; reserve circles for icon-only floating utilities.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do let typography and ruled structure carry the hierarchy before adding decoration.",
+      "Do reserve oxblood for primary action, dates, statuses, and concise emphasis.",
+      "Do maintain warm opaque surfaces, visible alignment, and generous section spacing.",
+      "Do preserve strong contrast and visible keyboard focus across light and dark surfaces.",
+      "Do keep evidence comparable through repeated row structures and tabular number treatment."
+    ],
+    "donts": [
+      "Don't introduce generic technology gradients, neon glows, glassmorphism, or dashboard-like cards.",
+      "Don't round standard buttons, panels, and content containers.",
+      "Don't use shadow as ambient decoration; it must communicate state or elevation.",
+      "Don't replace editorial serif hierarchy with an all-sans interface.",
+      "Don't dilute factual content with ornamental flourishes or invented visual claims."
+    ]
+  }
+}

@@ -18,23 +18,26 @@ const SKILLS = [
 export default function About() {
   return (
     <FadeInSection id="about" className="about section">
-      <h2 className="section-title">
-        About & Education <span className="accent-dot">.</span>
-      </h2>
-      <div className="grid layout-1-2">
-        <div className="education glass-card">
-          <h3>Education</h3>
-          <div className="timeline-item">
-            <div className="timeline-dot"></div>
-            <h4>BSC, Computer Science</h4>
-            <h5>Addis Ababa University</h5>
-            <p className="date">May 2022 - June 2025</p>
-            <p>CGPA: 3.94/4.0 | Summa Cum Laude</p>
+      <div className="section-heading">
+        <h2 className="section-title">Academic foundation</h2>
+        <p>
+          A rigorous computer science education, paired with a toolkit shaped by real operational
+          and analytical work.
+        </p>
+      </div>
+
+      <div className="profile-grid">
+        <div className="education-record">
+          <p className="education-score">3.94<span>/4.0</span></p>
+          <div>
+            <h3>BSc, Computer Science</h3>
+            <p>Addis Ababa University · Summa Cum Laude</p>
+            <p className="date">May 2022 — June 2025</p>
           </div>
         </div>
 
-        <div className="skills glass-card">
-          <h3>Core Skills</h3>
+        <div className="skills">
+          <h3>Working toolkit</h3>
           <div className="skills-grid">
             {SKILLS.map((group) => (
               <div className="skill-category" key={group.category}>

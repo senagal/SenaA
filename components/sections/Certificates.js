@@ -23,7 +23,7 @@ const CERTIFICATES = [
     alt: "AAU Certificate",
     description:
       "Received a Certificate of Recognition from the College of Natural and Computational Sciences, Addis Ababa University, for ranking first among female students in the campus.",
-    file: "/assets/AAU_Certificate.pdf",
+    file: null,
   },
   {
     title: "YeBen Life Skills and Leadership Training",
@@ -31,7 +31,7 @@ const CERTIFICATES = [
     alt: "YeBen Certificate",
     description:
       "Completed a month-long training program focused on leadership, financial literacy, effective communication, and other core life skills, aimed at fostering personal and professional growth.",
-    file: "/assets/YeBen.pdf",
+    file: null,
   },
 ];
 
@@ -57,60 +57,52 @@ function DocIcon() {
 
 export default function Certificates() {
   return (
-    <FadeInSection id="certificates" className="projects section">
-      <h2 className="section-title">
-        Awards & Certificates <span className="accent-dot">.</span>
-      </h2>
-      <div className="projects-grid">
+    <FadeInSection id="certificates" className="certificates section">
+      <div className="section-heading compact-heading">
+        <h2 className="section-title">Credentials & recognition</h2>
+        <p>Supporting proof of focused study, collaboration, leadership, and academic achievement.</p>
+      </div>
+      <div className="certificates-grid">
         {CERTIFICATES.map((cert) => (
-          <div className="project-card glass-card glow-on-hover" key={cert.title}>
-            <div className="project-content">
+          <article className="certificate" key={cert.title}>
+            <div className="cert-viewer">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={cert.image} alt={cert.alt} className="cert-img" />
+            </div>
+            <div className="certificate-copy">
               <h3>{cert.title}</h3>
-              <div className="cert-viewer">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={cert.image} alt={cert.alt} className="cert-img" />
-              </div>
               <p>{cert.description}</p>
-              <div className="project-links mt-4">
+              {cert.file ? (
                 <a
                   href={cert.file}
                   target="_blank"
                   rel="noreferrer"
-                  className="btn primary-btn"
-                  style={{ width: "100%", textAlign: "center" }}
+                  className="text-link"
                 >
-                  View / Download
+                  View certificate <span aria-hidden="true">↗</span>
                 </a>
-              </div>
+              ) : (
+                <span className="document-status">Image preview available</span>
+              )}
             </div>
-          </div>
+          </article>
         ))}
 
-        <div className="project-card glass-card glow-on-hover">
-          <div className="project-content">
+        <article className="certificate certificate-text-only">
+          <div className="cert-viewer">
+            <DocIcon />
+            <span>Recognition</span>
+          </div>
+          <div className="certificate-copy">
             <h3>KMUSSC Scholarship Recipient</h3>
-            <div className="cert-viewer">
-              <DocIcon />
-              KMUSSC Certificate
-            </div>
             <p>
               Awarded a high school scholarship at Kotebe Metropolitan University Science Shared
               Campus for scoring in the top 1% on Ethiopia’s Primary School Leaving Certificate
               Examination (PSLCE).
             </p>
-            <div className="project-links mt-4">
-              <a
-                href="/assets/KMUSSC.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="btn primary-btn"
-                style={{ width: "100%", textAlign: "center" }}
-              >
-                View / Download
-              </a>
-            </div>
+            <span className="document-status">Document not added</span>
           </div>
-        </div>
+        </article>
       </div>
     </FadeInSection>
   );
