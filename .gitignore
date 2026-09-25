@@ -31,8 +31,9 @@ Thumbs.db
 .vercel
 
 # Personal documents - keep out of version control
+# (public/SenaAbdisaCV.pdf is intentionally NOT ignored: it's the file the
+# "Download CV" button serves and must be committed to deploy correctly)
 SenaAbdisaCV.docx
-SenaAbdisaCV.pdf
 SenaAbdisaResume.pdf
 SenaAbdisaResume.docx
 

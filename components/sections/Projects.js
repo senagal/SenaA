@@ -1,19 +1,51 @@
 import FadeInSection from "../FadeInSection";
 
-const PROJECTS = [
+const DATA_PROJECTS = [
   {
-    title: "Real Madrid Defensive Transition Analyser",
+    title: "Media Sentiment and Tourist Arrivals in Ethiopia: A Data-Driven Analysis",
     description:
-      "Streamlit platform analyzing susceptibility to counter-attacks and defensive structure during transitions.",
-    tech: ["Python", "Streamlit"],
+      "Built an end to end data pipeline integrating The Guardian API and tourism datasets (1996–2021), using GPT-4o-mini for automated sentiment and topic classification. Analyzed the relationship between media coverage and sentiment with tourist arrivals using linear regression and developed an interactive Streamlit dashboard to visualize results.",
+    tech: ["Python", "Streamlit", "GPT-4o-mini"],
+    links: [
+      { label: "GitHub", href: "https://github.com/senagal/SenaAbdisa_Ethiopia_FinalProject", primary: false },
+      {
+        label: "Live App",
+        href: "https://senaaethiopiafinalproject-b3dbvtphkarquw8dxhtw7c.streamlit.app/?authuser=0",
+        primary: true,
+      },
+    ],
+  },
+  {
+    title: "Pass xG Analysis (Premier League 2024/25)",
+    description:
+      "Cleaned and analyzed event-level Wyscout match data using Python and Pandas to estimate expected goals (xG) contribution from passes across different player positions. Built statistical analyses and visualizations to identify passing patterns associated with shot creation and goal-scoring opportunities.",
+    tech: ["Python", "Pandas", "Wyscout"],
+    links: [
+      { label: "GitHub", href: "https://github.com/senagal/Soccermatics-Project2", primary: false },
+    ],
+  },
+  {
+    title: "Real Madrid Defensive Transition Analysis",
+    description:
+      "Developed a Streamlit application using event and SkillCorner tracking data to analyze Real Madrid's defensive structure during transitions after possession loss, to evaluate defensive organization, player positioning, and opponent threat.",
+    tech: ["Python", "Streamlit", "SkillCorner"],
     links: [
       { label: "GitHub", href: "https://github.com/senagal/Soccermatics-Project3.git", primary: false },
     ],
   },
   {
-    title: "Bruno Fernandez's Pass Analyser",
+    title: "Defensive Transition Analysis Bot (Premier League)",
     description:
-      "Platform comparing pass and assist metrics of Fernandes vs De Bruyne during UEFA Euro 2024.",
+      "Developed an AI-powered football analytics chatbot using tracking and event data to analyze defensive transitions after possession loss through compactness, defensive area, defenders behind the ball, and opponent threat metrics. Converted z-score-based tactical data into natural-language summaries and conversational analysis using LLMs.",
+    tech: ["Python", "AI", "LLM"],
+    links: [
+      { label: "GitHub", href: "https://github.com/mahisewinet/Defensive-Transition", primary: false },
+    ],
+  },
+  {
+    title: "Bruno Fernandez's Pass and Assist Analyser",
+    description:
+      "A Streamlit platform designed to analyse and compare Bruno Fernandez's pass and assists stats with other players, specifically Kevin De Bruyne, in the EURO 2024 league.",
     tech: ["Python", "Streamlit"],
     links: [
       { label: "GitHub", href: "https://github.com/senagal/Soccermatics-Project1.git", primary: false },
@@ -24,42 +56,32 @@ const PROJECTS = [
       },
     ],
   },
+];
+
+const WEB_PROJECTS = [
   {
     title: "Kuncho",
-    description:
-      "Web kids' entertainment platform providing culturally relevant content for Ethiopian children.",
+    description: "Kids' entertainment platform built with React, Node.js and PostgreSQL.",
     tech: ["React", "Node.js", "PostgreSQL"],
     links: [{ label: "GitHub", href: "https://github.com/senagal/Kuncho.git", primary: false }],
   },
   {
-    title: "SMOOL",
-    description: "School management system tailored for the Ethiopian curriculum.",
-    tech: ["Laravel", "PHP"],
-    links: [{ label: "GitHub", href: "https://github.com/oddegen/SMOOL.git", primary: false }],
-  },
-  {
     title: "PAS",
-    description:
-      "Web platform to support dormitory related administrative tasks for proctors at Addis Ababa University.",
+    description: "Dormitory management system for AAU built using React, Node.js & PostgreSQL.",
     tech: ["React", "Node.js", "PostgreSQL"],
     links: [],
   },
-];
-
-const UPCOMING_PROJECTS = [
   {
-    title: "Counter Attack Analyst",
-    description:
-      "An AI-based analyzer that evaluates a team’s defensive structure during a loss of possession and transitions after the loss. Currently being developed in Python as part of the Context Engineering course I’m taking by Twelve Football.",
-    tech: ["Python", "AI"],
-    links: [{ label: "GitHub", href: "#", primary: false }],
+    title: "SMOOL",
+    description: "School management system built with Laravel.",
+    tech: ["Laravel"],
+    links: [{ label: "GitHub", href: "https://github.com/oddegen/SMOOL.git", primary: false }],
   },
   {
-    title: "Hiriya",
-    description:
-      "An app that connects seniors, specially retired, with other seniors to develop their social life. It helps them do different activities like Tennis, Walks, Chess or a simple coffee meetup etc. It is currently under development.",
-    tech: ["Laravel", "PHP"],
-    links: [{ label: "GitHub", href: "#", primary: false }],
+    title: "YeBen Endowment Fund Website",
+    description: "WordPress website built for the YeBen Endowment Fund.",
+    tech: ["WordPress"],
+    links: [],
   },
 ];
 
@@ -100,17 +122,21 @@ export default function Projects() {
       <h2 className="section-title">
         Projects <span className="accent-dot">.</span>
       </h2>
+
+      <h2 className="section-title mt-4">
+        Data Analysis & Visualization Projects <span className="accent-dot">.</span>
+      </h2>
       <div className="projects-grid">
-        {PROJECTS.map((project) => (
+        {DATA_PROJECTS.map((project) => (
           <ProjectCard project={project} key={project.title} />
         ))}
       </div>
 
       <h2 className="section-title mt-4">
-        Upcoming Projects <span className="accent-dot">.</span>
+        Web & System Development <span className="accent-dot">.</span>
       </h2>
       <div className="projects-grid">
-        {UPCOMING_PROJECTS.map((project) => (
+        {WEB_PROJECTS.map((project) => (
           <ProjectCard project={project} key={project.title} />
         ))}
       </div>
